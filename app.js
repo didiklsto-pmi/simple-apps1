@@ -31,7 +31,7 @@ app.get('/users', (req, res, next) => {
   })
 });
 
-app.listen(process.env.APP_PORT, 192.168.115.253 () => {
+app.listen(process.env.APP_PORT, () => {
   console.log(`Example app listening on port ${process.env.APP_PORT}`)
 })
 
