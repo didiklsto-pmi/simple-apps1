@@ -2,6 +2,13 @@ const request = require('supertest');
 const mysql = require('mysql');
 require('dotenv').config();
 
+const port = process.env.APP_PORT || 3000;
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
+
+
 const connection = require('../middleware/db_connect');
 const app = require('../app'); // Replace with the path to your application file
 
